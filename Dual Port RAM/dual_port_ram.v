@@ -10,13 +10,13 @@ reg [7:0] ram[63:0];
 always @ (posedge clk)
 begin
      if(we1)
-	        ram[addr1]<=data1;
-	  if(!we1)
-	        q1<=ram[addr1];
+	         ram[addr1]<=data1;
+     if(!we1)
+	         q1<=ram[addr1];
      if(we2)
 	         ram[addr2]<=data2;
      if(!we2)
-            q2<=ram[addr2];
+            	 q2<=ram[addr2];
 end				
 	       
 endmodule
